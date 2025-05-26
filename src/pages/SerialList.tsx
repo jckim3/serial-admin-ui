@@ -17,6 +17,7 @@ export default function SerialList() {
       <table className="serial-table">
         <thead>
           <tr>
+            <th>No.</th>
             <th>Key</th>
             <th>Hospital</th>
             <th>Software</th>
@@ -27,6 +28,7 @@ export default function SerialList() {
         <tbody>
           {serials.map((s, idx) => (
             <tr key={idx}>
+              <td>{idx + 1}</td> {/* No. 열 */}
               <td>{s.key}</td>
               <td>{s.hospital}</td>
               <td>{s.software}</td>
