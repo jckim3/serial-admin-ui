@@ -15,7 +15,8 @@ export default function CreateSerial() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/api/serials', form);
+      // const res = await axios.post('http://localhost:3000/api/serials', form);
+      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/serials`, form);
       alert(`✅ Serial Created: ${res.data.serial}`);
     } catch {
       alert('❌ Failed to create serial');

@@ -6,7 +6,8 @@ export default function SerialList() {
   const [serials, setSerials] = useState<any[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/serials').then(res => {
+    // axios.get('http://localhost:3000/api/serials').then(res => {
+      axios.get(`${import.meta.env.VITE_API_BASE_URL}/serials`).then(res => {
       setSerials(res.data);
     });
   }, []);
