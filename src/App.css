@@ -40,9 +40,12 @@ body {
 }
 
 .content {
-  padding-top: 100px; /* 💥 nav-bar 아래 콘텐츠 시작 위치 고정 */
+  padding-top: 100px,0,0,0; /* 💥 nav-bar 아래 콘텐츠 시작 위치 고정 */
   width: 100%;
   max-width: 960px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+   padding-left: 0;
+  padding-right: 0;
+
 }

@@ -1,7 +1,11 @@
 .list-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1.5rem;
+  /* max-width: 900px; */
+  max-width: 100%;         /* 기존 900px 제거 */
+  /* margin: 2rem auto; */
+  margin: 0;
+  /* padding: 1.5rem; */
+   /* padding: 1.5rem 0rem;    */
+   padding: 0 ;  /* 좌우 padding 제거 */
   background-color: #f9f9ff;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
@@ -18,6 +22,7 @@
   border: 1px solid #ccc;
   padding: 0.75rem;
   text-align: left;
+  white-space: nowrap;         /* ✨ 줄바꿈 방지 */
 }
 
 .serial-table th {
@@ -32,3 +37,13 @@
 .serial-table tr:hover {
   background-color: #e9f2ff;
 }
+
+.serial-table td:nth-child(2) {  /* Key 열 */
+  min-width: 220px;              /* ✨ 넓게 설정 */
+}
+
+.serial-table td:nth-child(10) { /* Created 열 */
+  min-width: 180px;              /* ✨ 넓게 설정 */
+}
+
+
