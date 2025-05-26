@@ -1,0 +1,34 @@
+.list-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.serial-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+.serial-table th,
+.serial-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.serial-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.serial-table tr:nth-child(even) {
+  background-color: #f3f7fa;
+}
+
+.serial-table tr:hover {
+  background-color: #e9f2ff;
+}

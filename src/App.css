@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f8f9fb;
+
+  display: flex;               /* 💥 추가 */
+  justify-content: center;     /* 💥 가운데 정렬 */
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #f4f6fa;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #3366ff;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #3366ff;
+}
+
+.content {
+  padding-top: 100px; /* 💥 nav-bar 아래 콘텐츠 시작 위치 고정 */
+  width: 100%;
+  max-width: 960px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
